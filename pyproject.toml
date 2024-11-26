@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "0xparc-intro-book-workbook"
+version = "0.1.0"
+description = ""
+authors = ["flyingnobita <46126470+flyingnobita@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.6"
+pycryptodome = "^3.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
