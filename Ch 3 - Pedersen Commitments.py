@@ -36,6 +36,7 @@ def generate_points(generator, n):
     return points
 
 
+### Setup the commitment scheme
 def setup(n):
     """
     Initialize the commitment scheme by generating random points
@@ -53,6 +54,7 @@ print("g_points:", g_points)
 print("h_point:", h_point)
 
 
+### Commit to the message without a blinding factor
 def commit_unblinded(message, g_points):
     """
     Create an unblinded commitment to a message
