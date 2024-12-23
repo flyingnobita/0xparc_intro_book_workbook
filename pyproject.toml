@@ -11,7 +11,8 @@ pycryptodome = "^3.21.0"
 py-ecc = "^7.0.1"
 galois = "^0.4.3"
 numpy = "^2.0.2"
-
+pytest = "^8.3.4"
+jdc = "^0.0.9"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
@@ -19,3 +20,6 @@ ipykernel = "^6.29.5"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest]
+pythonpath = "."
