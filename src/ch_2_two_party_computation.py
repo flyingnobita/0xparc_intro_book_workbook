@@ -58,6 +58,7 @@ passwords = []
 initialization_vectors = []
 garbled_gate_outputs = []
 
+
 # Generate ciphertext for each gate output
 for index_bob_message in range(len(plain_gate_outputs)):
     # Convert the input to bytes
@@ -317,3 +318,5 @@ bob_messages_decrypted = cipher.decrypt(
 
 # Assert that the messages are correct
 assert bob_messages_decrypted == alice_messages[index_bob_message]
+
+# TODO Combine Garbled Circuits and OT
