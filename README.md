@@ -63,6 +63,8 @@ pytest tests/test_ch_6_oram.py
     - [x] 3.4 KZG Commitments
   - [ ] Ch 4: SNARKs
   - [ ] Ch 5: FHE
+    - [x] 5.3 Public Key Cryptography from LWE Example
+    - [x] 5.4.3 The "Flatten" Operation
   - [ ] Ch 6: ORAM
     - [x] 6.3 Binary Tree ORAM
     - [x] 6.7 Path ORAM
