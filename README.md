@@ -54,9 +54,9 @@ pytest tests/test_ch_6_oram.py
     - [x] 2.1.4 Chaining garbled gates
     - [x] 2.1.5 How Bob uses one gate
     - [x] 2.2.1 Commutative encryption
-    - [x] 2.2.3 OT in one step
-    - [ ] 2.1.5 Chaining multiple gates
-    - [ ] Combine garble circuits and OT
+    - [ ] 2.2.3 OT in one step
+    - [x] 2.1.5 Chaining multiple gates
+    - [x] Combine garbled circuits and OT
   - [ ] Ch 3: EC & PCS
     - [x] 3.2.2 EdDSA Signature Scheme
     - [x] 3.2.3 Pedersen Commitments
