@@ -35,7 +35,22 @@ q = 11
 m = random.choice([0, 5])
 
 
-def encrypt(public_key_chosen, q, m):
+def encrypt(
+    public_key_chosen: list[list[list[int] | int]], q: int, m: int
+) -> list[list[int] | int]:
+    """Encrypt a message using the Learning With Errors (LWE) encryption scheme.
+
+    Args:
+        public_key_chosen: A list of chosen rows from the public key, where each row contains
+            a list of integers and a single integer.
+        q: The modulus value used for arithmetic operations.
+        m: The message to encrypt (either 0 or 5).
+
+    Returns:
+        A list containing the ciphertext as [x, y] where:
+            - x is a list of integers representing the sum of public key elements
+            - y is the encrypted message value
+    """
     # Calculate x: For every row of the public key, sum each element of the first item
     # modulo q. e.g. 1 + 5 + 7 + 5 = 18 % 11 = 7
     x = []
@@ -63,8 +78,19 @@ ciphertext = encrypt(public_key_chosen, q, m)
 a = [10, 8, 10, 10]
 
 
-def decrypt(ciphertext, private_key, modulus):
+def decrypt(
+    ciphertext: list[list[int] | int], private_key: list[int], modulus: int
+) -> int:
+    """Decrypt a ciphertext using the Learning With Errors (LWE) decryption scheme.
 
+    Args:
+        ciphertext: A list containing [x, y] where x is a list of integers and y is an integer.
+        private_key: The private key vector used for decryption.
+        modulus: The modulus value used for arithmetic operations.
+
+    Returns:
+        The decrypted message value (either 0 or 5).
+    """
     # x ⋅ a + 𝜖 = y + m where 0 ≤ 𝜖 ≤ 4
 
     # calculate x ⋅ a
@@ -88,24 +114,6 @@ decoded_message = decrypt(ciphertext, a, q)
 
 assert decoded_message == m
 
-## 5.4.1
-
-# secret key 𝐯 is a vector of length n
-# 𝐯 = (𝑣_1, …, 𝑣_𝑛) ∈ (ℤ/𝑞ℤ)^𝑛
-v = [1, 2, 10, 1]
-
-
-# message 𝜇
-# 𝜇 ∈ {0, 1}
-mu = 1
-
-
-# Ciphertext 𝐶 is a square n-by-n matrix
-
-# 𝐶𝐯 ≈ 𝜇𝐯
-# i.e. Ciphertext * secret key ≈ message * secret key
-
-
 ## 5.4.3 The "Flatten" Operation
 
 # let r = 1, 𝐯 = (𝑎_1, 2𝑎_1, 4𝑎_1, 8𝑎_1)
@@ -120,8 +128,20 @@ x_1 = [9, 0, 0, 0]
 x_2 = [9, 3, 1, 4]
 
 
-def flatten(x, v, modulus):
+def flatten(x: list[int], v: list[int], modulus: int) -> str:
+    """Perform the flatten operation on a vector x with respect to vector v.
 
+    The flatten operation converts the dot product of x and v (mod q) into its binary representation.
+
+    Args:
+        x: The input vector to flatten.
+        v: The vector to compute the dot product with.
+        modulus: The modulus value used for arithmetic operations.
+
+    Returns:
+        A string representing the binary representation of (x·v mod q), padded with leading zeros
+        to match the length of vector v.
+    """
     # calculate x_dot_v
     x_dot_v = sum([x[i] * v[i] for i in range(len(x))]) % modulus
 
