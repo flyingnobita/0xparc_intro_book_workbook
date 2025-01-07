@@ -1,5 +1,11 @@
 # Workbook for Introduction to Programmable Cryptography
 
+## Notes
+
+The main objective of the code is to help readers follow the book and its concepts. Thus the code is written in the simplest and most straight forward manner possible (i.e. no optimizations).
+
+TODO: remove `.py` files as they are for dev purposes and are replicates of `.ipynb`
+
 ## How To Install
 
 ### Dependencies
