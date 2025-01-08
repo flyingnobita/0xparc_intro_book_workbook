@@ -10,7 +10,7 @@ TODO: remove `.py` files as they are for dev purposes and are replicates of `.ip
 
 ### Dependencies
 
-This project's dependcies are managed by [Poetry](https://python-poetry.org/).
+This project's dependencies are managed by [Poetry](https://python-poetry.org/).
 
 #### Install Poetry (if not already installed)
 
@@ -43,13 +43,13 @@ There are unittest files for certain chapters.
 **Run all test files:**
 
 ```bash
-pytest
+poetry run pytest
 ```
 
 **Run test for specifc chapter:**
 
 ```bash
-pytest tests/test_ch_6_oram.py
+poetry run pytest tests/test_ch_6_oram.py
 ```
 
 ## Roadmap
