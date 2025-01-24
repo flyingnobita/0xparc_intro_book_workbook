@@ -4,6 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["flyingnobita <46126470+flyingnobita@users.noreply.github.com>"]
 readme = "README.md"
+package-mode = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.12.6"
@@ -13,13 +18,7 @@ galois = "^0.4.3"
 numpy = "^2.0.2"
 pytest = "^8.3.4"
 jdc = "^0.0.9"
-
-[tool.poetry.group.dev.dependencies]
-ipykernel = "^6.29.5"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+jupyterlab = "^4.3.4"
 
 [tool.pytest]
 pythonpath = "."

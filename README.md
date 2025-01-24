@@ -26,15 +26,18 @@ If the above doesn't work for you, you can see see additional instructions [here
 poetry install
 ```
 
-### Jupyter
-
-#### Install JupyterLab (if not already installed)
-
-TODO: See if need to add Jupyter install to Poetry
-
 ## How To Run
 
 All notebook files are in the `src` folder and can be run inside a Jupyter Lab environment.
+
+To start JupyterLab:
+
+``` bash
+jupyter-lab
+```
+
+Then open the jupyter notebook files inside the `\src` folder
+
 
 ## How to Test
 
