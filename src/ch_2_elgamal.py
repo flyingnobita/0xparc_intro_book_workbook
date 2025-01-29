@@ -107,13 +107,13 @@ class ElGamal:
     def encrypt(
         self,
         message: Union[str, bytes],
-        public_key: Optional[Tuple[int, int, int]] = None,
+        public_key: Tuple[int, int, int],
     ) -> list[Tuple[int, int]]:
         """Encrypt a message using ElGamal encryption.
 
         Args:
             message: Message to encrypt, can be either string or bytes.
-            public_key: Optional tuple of (p, g, y). If None, uses internal values.
+            public_key: tuple of (p, g, y).
             output_bytes: If True, treats input as raw bytes. If False, treats input as string.
 
         Returns:
@@ -123,12 +123,10 @@ class ElGamal:
             ValueError: If any byte value is larger than the prime modulus.
             TypeError: If message is neither string nor bytes.
         """
-        if public_key is None:
-            p, g, y = self.p, self.g, self.y
-        else:
-            p, g, y = public_key
 
-        # Handle input based on type
+        p, g, y = public_key
+
+        # Convert message to bytes
         if isinstance(message, str):
             message_bytes = message.encode("utf-8")
         elif isinstance(message, bytes):
@@ -180,8 +178,10 @@ class ElGamal:
 
         if output_bytes:
             return message_bytes
-        try:
-            return message_bytes.decode("utf-8")
-        except UnicodeDecodeError:
-            # If decoding fails, return as hex string instead
-            return message_bytes.hex()
+        else:
+            try:
+                # Convert to string
+                return message_bytes.decode("utf-8")
+            except UnicodeDecodeError:
+                # If decoding fails, return as hex string instead
+                return message_bytes.hex()
