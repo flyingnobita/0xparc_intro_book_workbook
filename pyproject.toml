@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "0xparc-intro-book-workbook"
 version = "0.1.0"
-description = ""
+description = "Workbook for 0xPARC's Introduction to Programmable Cryptography book."
 authors = ["flyingnobita <46126470+flyingnobita@users.noreply.github.com>"]
 readme = "README.md"
 package-mode = false
+license = "MIT"
+repository = "https://github.com/flyingnobita/0xparc-intro-book-workbook"
+keywords = ["cryptography", "workbook", "progcrypto", "0xparc"]
 
 [build-system]
 requires = ["poetry-core"]
@@ -12,13 +15,26 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.12.6"
-pycryptodome = "^3.21.0"
 py-ecc = "^7.0.1"
-galois = "^0.4.3"
 numpy = "^2.0.2"
-pytest = "^8.3.4"
 jdc = "^0.0.9"
 jupyterlab = "^4.3.4"
+galois = "^0.4.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
 
 [tool.pytest]
 pythonpath = "."
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-ra -q"
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true

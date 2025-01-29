@@ -1,10 +1,10 @@
 # Workbook for Introduction to Programmable Cryptography
 
-## Notes
+This repo is the workbook for 0xPARC's [Introduction to Programmable Cryptography](https://github.com/0xPARC/0xparc-intro-book) book. Its main objective is to help readers follow the book and its concepts. The Jupyter Notebooks directly translate the algorithms and examples mentioned in the book, written in the most straightforward manner possible (i.e., no optimizations).
 
-The main objective of the code is to help readers follow the book and its concepts. Thus the code is written in the simplest and most straight forward manner possible (i.e. no optimizations).
+For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/plonkathon) which contains related exercises. You can also see my PlonKathon [blog post](https://flyingnobita.com/posts/2024/09/29/plonkathon) for hints.
 
-TODO: remove `.py` files as they are for dev purposes and are replicates of `.ipynb`
+_Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [Brian Lawrence](https://github.com/tideofwords) for their feedback. Thank you to [0xPARC](https://0xparc.org/) for sponsoring this project._
 
 ## How To Install
 
@@ -18,7 +18,7 @@ This project's dependencies are managed by [Poetry](https://python-poetry.org/).
 pipx install poetry
 ```
 
-If the above doesn't work for you, you can see see additional instructions [here](https://python-poetry.org/docs/#installation) on Poetry installation.
+If the above doesn't work, see [here](https://python-poetry.org/docs/#installation) for additional instructions on Poetry installation.
 
 #### Install Dependencies with Poetry
 
@@ -32,12 +32,11 @@ All notebook files are in the `src` folder and can be run inside a Jupyter Lab e
 
 To start JupyterLab:
 
-``` bash
+```bash
 jupyter-lab
 ```
 
 Then open the jupyter notebook files inside the `\src` folder
-
 
 ## How to Test
 
@@ -57,24 +56,23 @@ poetry run pytest tests/test_ch_6_oram.py
 
 ## Roadmap
 
-- [ ] Code companion to text
-  - [ ] Ch 2: 2PC
+- [x] Code companion to text
+  - [x] Ch 2: 2PC
     - [x] 2.1.3 Garbled gates
     - [x] 2.1.4 Chaining garbled gates
     - [x] 2.1.5 How Bob uses one gate
+      - [x] Example: How to chain 2 garbled gates
     - [x] 2.2.1 Commutative encryption
-    - [ ] 2.2.3 OT in one step
-    - [x] 2.1.5 Chaining multiple gates
-    - [x] Combine garbled circuits and OT
-  - [ ] Ch 3: EC & PCS
+    - [x] 2.2.3 OT in one step
+      - [x] Example: How to combine garbled circuits and OT
+  - [x] Ch 3: EC & PCS
     - [x] 3.2.2 EdDSA Signature Scheme
     - [x] 3.2.3 Pedersen Commitments
     - [x] 3.4 KZG Commitments
-  - [ ] Ch 4: SNARKs
-  - [ ] Ch 5: FHE
+  - [x] Ch 5: FHE
     - [x] 5.3 Public Key Cryptography from LWE Example
     - [x] 5.4.3 The "Flatten" Operation
-  - [ ] Ch 6: ORAM
+  - [x] Ch 6: ORAM
     - [x] 6.3 Binary Tree ORAM
     - [x] 6.7 Path ORAM
     - Other Ideas:

@@ -1,3 +1,6 @@
+# Note: The content of this file is exactly the same as the content of ch_6_oram.ipynb.
+# This file is created for testing with pytest.
+
 # Implementation of a Binary-tree ORAM
 
 # Example Tree Structure (D: Depth, H: Height)
@@ -119,27 +122,6 @@ class ORAM:
         # Initialize Position Map
         # Fill the position map with None for all addresses
         self.position_map = {i: None for i in range(self.number_of_blocks)}
-
-        # TODO: To be removed
-        # Fill the position map with random path for each address
-        # block_address_list = list(range(self.number_of_blocks))
-        # random.shuffle(block_address_list)
-        # for i in range(self.number_of_buckets):
-        #     for j in range(self.bucket_size):
-        #         address = block_address_list.pop()
-        #         # Assign a block to a random bucket
-        #         self.buckets[i].blocks[j] = Block(address, None)
-        #         # Assign a random path to the block on the Position Map
-        #         self.position_map[address] = self.generate_new_path_for_bucket(i)
-        # print(
-        #     "bucket_index: ",
-        #     i,
-        #     " path: ",
-        #     self.position_map[address],
-        #     " address: ",
-        #     address,
-        # )
-        # self.print_position_map()
 
         # **For Path ORAM** - Initialize Stash
         if number_of_blocks_in_stash is None:

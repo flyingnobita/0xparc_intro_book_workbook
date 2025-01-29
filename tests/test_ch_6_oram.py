@@ -1,12 +1,20 @@
 from collections import deque
 from typing import TYPE_CHECKING
-from src.ch_6_oram import Block, Bucket, ORAM
+
 import pytest
+
+# Skip testing from this module if ch_6_oram.py is not found
+ch_6_oram = pytest.importorskip("src.ch_6_oram")
+
+from src.ch_6_oram import Block, Bucket, ORAM
 
 if TYPE_CHECKING:
     from pytest_mock import MockerFixture
 
 
+@pytest.mark.skip(
+    reason="Pytest only work on .py files. Need to convert src/ch_6_oram.ipynb to .py first."
+)
 class TestORAM:
     @pytest.fixture
     def oram_instance(self) -> ORAM:

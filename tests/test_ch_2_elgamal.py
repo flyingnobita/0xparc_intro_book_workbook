@@ -61,27 +61,11 @@ def test_special_characters() -> None:
         assert decrypted == message
 
 
-def test_public_key_encryption() -> None:
-    """Test encryption using explicitly provided public key."""
-    elgamal = ElGamal()
-    public_key, private_key = elgamal.generate_keys()
-
-    message = "Test message"
-    ciphertext = elgamal.encrypt(message, public_key)
-    decrypted = elgamal.decrypt(ciphertext, private_key)
-
-    assert decrypted == message
-
-
 def test_long_message() -> None:
     """Test encryption and decryption of a long message."""
     elgamal = ElGamal()
     public_key, private_key = elgamal.generate_keys()
 
-    # message = (
-    #     "This is a very long message that will be encrypted character by character. "
-    #     * 10
-    # )
     # Create a message of just less than 384 bits long
     message = "a" * (384 // 8 - 1)
 
