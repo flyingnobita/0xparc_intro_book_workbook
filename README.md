@@ -1,5 +1,9 @@
 # Workbook for Introduction to Programmable Cryptography
 
+<p align="center">
+  <img src="cover.jpg" width="400">
+</p>
+
 This repo is the workbook for 0xPARC's [Introduction to Programmable Cryptography](https://github.com/0xPARC/0xparc-intro-book) book. Its main objective is to help readers follow the book and its concepts. The Jupyter Notebooks directly translate the algorithms and examples mentioned in the book, written in the most straightforward manner possible (i.e., no optimizations).
 
 For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/plonkathon) which contains related exercises. You can also see my PlonKathon [blog post](https://flyingnobita.com/posts/2024/09/29/plonkathon) for hints.
