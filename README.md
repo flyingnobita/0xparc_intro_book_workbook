@@ -1,7 +1,7 @@
 # Introduction to Programmable Cryptography Workbook
 
 <p align="center">
-  <img src="cover.jpg" width="400">
+  <img src="Programmable_Cryptography_Workbook_Cover.jpg" width="400">
 </p>
 
 This is 0xPARC's [Introduction to Programmable Cryptography](https://github.com/0xPARC/0xparc-intro-book) workbook. Its main objective is to help readers follow the book and its concepts. The Jupyter Notebooks directly translate the algorithms and examples mentioned in the book, written in the most straightforward manner possible (i.e., no optimizations).
