@@ -8,7 +8,9 @@ This is 0xPARC's [Introduction to Programmable Cryptography](https://github.com/
 
 For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/plonkathon) which contains related exercises. You can also see my PlonKathon [blog post](https://flyingnobita.com/posts/2024/09/29/plonkathon) for hints.
 
-_Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [Brian Lawrence](https://github.com/tideofwords) for their feedback. Thank you to [0xPARC](https://0xparc.org/) for sponsoring this project._
+#### Acknowledgement
+
+Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [Brian Lawrence](https://github.com/tideofwords) for their feedback. Thank you to [0xPARC](https://0xparc.org/) for sponsoring this project.
 
 ## How To Install
 
