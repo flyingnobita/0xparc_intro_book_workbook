@@ -12,13 +12,17 @@ For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/p
 
 Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [Brian Lawrence](https://github.com/tideofwords) for their feedback. Thank you to [0xPARC](https://0xparc.org/) for sponsoring this project.
 
-## How To Install
+## Running Online
 
-### Dependencies
+## Running Locally
+
+### How To Install
+
+#### Dependencies
 
 This project's dependencies are managed by [Poetry](https://python-poetry.org/).
 
-#### Install Poetry (if not already installed)
+##### Install Poetry (if not already installed)
 
 ```shell
 pipx install poetry
@@ -26,13 +30,13 @@ pipx install poetry
 
 If the above doesn't work, see [here](https://python-poetry.org/docs/#installation) for additional instructions on Poetry installation.
 
-#### Install Dependencies with Poetry
+##### Install Dependencies with Poetry
 
 ```shell
 poetry install
 ```
 
-## How To Run
+### How To Run
 
 All notebook files are in the `src` folder and can be run inside a Jupyter Lab environment.
 
@@ -44,7 +48,7 @@ jupyter-lab
 
 Then open the jupyter notebook files inside the `\src` folder
 
-## How to Test
+### How to Test
 
 There are unittest files for certain chapters.
 
