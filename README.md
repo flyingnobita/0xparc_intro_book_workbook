@@ -4,7 +4,7 @@
   <img src="Programmable_Cryptography_Workbook_Cover.jpg" width="400">
 </p>
 
-This is 0xPARC's [Introduction to Programmable Cryptography](https://github.com/0xPARC/0xparc-intro-book) workbook. Its main objective is to help readers follow the book and its concepts. The Jupyter Notebooks directly translate the algorithms and examples mentioned in the book, written in the most straightforward manner possible (i.e., no optimizations).
+This is a workbook for 0xPARC's [Introduction to Programmable Cryptography](https://github.com/0xPARC/0xparc-intro-book) ([PDF](Four_Easy_Pieces_in_Programmable_Cryptography_2024-09-09.pdf)) book. Its main objective is to help readers follow the book and its concepts. The Jupyter Notebooks directly translate the algorithms and examples mentioned in the book, written in the most straightforward manner possible (i.e., no optimizations).
 
 For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/plonkathon) which contains related exercises. You can also see my PlonKathon [blog post](https://flyingnobita.com/posts/2024/09/29/plonkathon) for hints.
 
