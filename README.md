@@ -12,6 +12,10 @@ For Chapter 4, please refer to 0xPARC's [PlonKathon](https://github.com/0xPARC/p
 
 Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [Brian Lawrence](https://github.com/tideofwords) for their feedback. Thank you to [0xPARC](https://0xparc.org/) for sponsoring this project.
 
+<p align="center">
+  <img src="/assets/notebook_screenshot.jpg" width="400">
+</p>
+
 ## Running Online
 
 [Open notebooks on Binder](https://mybinder.org/v2/gh/flyingnobita/0xparc_intro_book_workbook/e7f731a32373b3b77ace524dcbf50d2c74bd22b2?urlpath=lab%2Ftree%2Fsrc%2Fdirectory.ipynb)
