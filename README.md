@@ -18,7 +18,7 @@ Thank you to the book's authors, [Evan Chen](https://github.com/vEnhance) and [B
 
 ## Running Online
 
-[Open notebooks on Binder](https://mybinder.org/v2/gh/flyingnobita/0xparc_intro_book_workbook/e7f731a32373b3b77ace524dcbf50d2c74bd22b2?urlpath=lab%2Ftree%2Fsrc%2Fdirectory.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flyingnobita/0xparc_intro_book_workbook/HEAD?urlpath=lab%2Ftree%2Fsrc%2Fdirectory.ipynb)
 
 ## Running Locally
 
