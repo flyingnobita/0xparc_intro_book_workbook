@@ -12,9 +12,6 @@ if TYPE_CHECKING:
     from pytest_mock import MockerFixture
 
 
-@pytest.mark.skip(
-    reason="Pytest only work on .py files. Need to convert src/ch_6_oram.ipynb to .py first."
-)
 class TestORAM:
     @pytest.fixture
     def oram_instance(self) -> ORAM:

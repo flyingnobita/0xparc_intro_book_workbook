@@ -24,7 +24,7 @@ galois = "^0.4.3"
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 
-[tool.pytest]
+[tool.pytest.ini_options]
 pythonpath = "."
 testpaths = ["tests"]
 python_files = ["test_*.py"]
